@@ -14,12 +14,12 @@ ____________________
 Contributor:
 ____________________
 Marie Claire Capolei: MACCA
-Silvia Tolu: STOLUarchitecture 
+Silvia Tolu: STOLU
 Carlos Corchado Miralles: CCMIR
 
 Format:
 task_contributor_date
 
 Example
-0001_CCM_060618
-0001_MCC_060618
+0001_CCMIR_060618
+0001_MACCA_060618
