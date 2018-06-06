@@ -1,25 +1,17 @@
 # DTU-neurorobotics
-Files organization:
+Files organization example
+
+task_name-------------analog |------fable_robot---contributor_date
+                      |      |------icub_robot----contributor_date
+                      |
+                      |
+                      |
+                      spiking|------fable_robot---contributor_date
+                             |------icub_robot----contributor_date
 
 ____________________
-Tasks:
-____________________
-0001 Forward architecture 
-0002 Reccurent architecture 
-0003 Hybrid architecture 
-0004 
-0005 Spiking Cerebellum DTU
-0006 
-____________________
-Contributor:
+Contributors:
 ____________________
 Marie Claire Capolei: MACCA
 Silvia Tolu: STOLU
 Carlos Corchado Miralles: CCMIR
-
-Format:
-task_contributor_date
-
-Example
-0001_CCMIR_060618
-0001_MACCA_060618
