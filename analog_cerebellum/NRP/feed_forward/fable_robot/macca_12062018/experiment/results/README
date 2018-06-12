@@ -1,0 +1,12 @@
+the experiment load one module (2 DoF) of the Fable Robot on a table
+
+Transfer Functions
+- Planner:
+	plan the desired joints trajectory ( infinity loop, circle, fixed reference) and publish it on the "/robot/desired_trajectory/joints" topic
+- Controller:
+	create an approximate robot model for the inverse dynamics
+	connect to the apply_joint_effort service
+	compute the joint error and publish it on the topic "/robot/joint_error/position", /robot/joint_error/velocity
+	calculate the torque given the desired joints trajectory
+	* missing cerebellum output *
+	send the final control input to the robot ( joint_1 is the bottom joint)

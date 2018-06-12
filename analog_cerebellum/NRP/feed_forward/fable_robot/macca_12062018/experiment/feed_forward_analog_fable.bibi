@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bibi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.humanbrainproject.eu/SP10/2014/BIBI" xsi:schemaLocation="http://schemas.humanbrainproject.eu/SP10/2014/BIBI ../bibi_configuration.xsd">
+  <brainModel>
+    <file>brain_model/idle_brain.py</file>
+  </brainModel>
+  <bodyModel>fable_model/model.sdf</bodyModel>
+
+  <!--transferFunction xsi:type="Neuron2Monitor" name="DCN_j1_spike_monitor">
+  <device name="all_neurons" type="SpikeRecorder">
+    <neurons xsi:type="Range" population="DCN_j1" from="0" to="4"/>
+  </device>
+  </transferFunction>
+  
+  <transferFunction xsi:type="Neuron2Monitor" name="DCN_j2_spike_monitor">
+  <device name="all_neurons" type="SpikeRecorder">
+    <neurons xsi:type="Range" population="DCN_j2" from="0" to="4"/>
+  </device>
+  </transferFunction>
+  
+  </transferFunction-->
+  <!--transferFunction xsi:type="PythonTransferFunction" src="init.py"/-->
+  <transferFunction xsi:type="PythonTransferFunction" src="planner.py"/>
+  <transferFunction xsi:type="PythonTransferFunction" src="controller.py"/>
+  <!--transferFunction xsi:type="PythonTransferFunction" src="error.py"/-->
+
+
+  
+</bibi>
