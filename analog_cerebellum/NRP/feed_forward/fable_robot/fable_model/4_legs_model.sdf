@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.6'>
+  <model name='fable_robot'>
+    <link name='b_body'>
+      <pose frame=''>0 0 0.3 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.87</mass>
+        <inertia>
+          <ixx>0.00271319</ixx>
+          <ixy>0</ixy>
+          <ixz>3.0916e-36</ixz>
+          <iyy>0.00311552</iyy>
+          <iyz>0</iyz>
+          <izz>0.00414917</izz>
+        </inertia>
+      </inertial>
+      <collision name='b_body_collision'>
+        <pose frame=''>0.11 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/passivebody.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__b_leg1_collision_1'>
+        <pose frame=''>0.055 -0.05 0 -1.57079 1.57079 -3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.001 0.001 0.001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__leg1_base_link_collision_2'>
+        <pose frame=''>0.055 -0.05 0 -1.57079 1.57079 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__b_leg2_collision_3'>
+        <pose frame=''>0.055 0.05 0 1.57079 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.001 0.001 0.001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__leg2_base_link_collision_4'>
+        <pose frame=''>0.055 0.05 0 1.57079 1.57079 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__b_leg3_collision_5'>
+        <pose frame=''>-0.055 -0.05 0 -1.57079 1.57079 -3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.001 0.001 0.001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__leg3_base_link_collision_6'>
+        <pose frame=''>-0.055 -0.05 0 -1.57079 1.57079 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__b_leg4_collision_7'>
+        <pose frame=''>-0.055 0.05 0 1.57079 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.001 0.001 0.001</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='b_body_fixed_joint_lump__leg4_base_link_collision_8'>
+        <pose frame=''>-0.055 0.05 0 1.57079 1.57079 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='b_body_visual'>
+        <pose frame=''>0.11 -0.05 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/passivebody.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='b_body_fixed_joint_lump__leg1_base_link_visual_1'>
+        <pose frame=''>0.055 -0.05 0 -1.57079 1.57079 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='b_body_fixed_joint_lump__leg2_base_link_visual_2'>
+        <pose frame=''>0.055 0.05 0 1.57079 1.57079 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='b_body_fixed_joint_lump__leg3_base_link_visual_3'>
+        <pose frame=''>-0.055 -0.05 0 -1.57079 1.57079 -3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='b_body_fixed_joint_lump__leg4_base_link_visual_4'>
+        <pose frame=''>-0.055 0.05 0 1.57079 1.57079 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/base.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <!--joint name='world_joint' type='fixed'>
+      <child>b_body</child>
+      <parent>world</parent>
+    </joint-->
+    <link name='leg1_neck'>
+      <pose frame=''>0.055 -0.1445 0.3 -1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>6.88121e-06</ixx>
+          <ixy>-7.58338e-10</ixy>
+          <ixz>-7.71885e-11</ixz>
+          <iyy>7.67769e-06</iyy>
+          <iyz>7.59082e-10</iyz>
+          <izz>6.8812e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg1_neck_collision'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='leg1_neck_visual'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg1_joint_1' type='revolute'>
+      <child>leg1_neck</child>
+      <parent>b_body</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg1_top'>
+      <pose frame=''>0.055 -0.1902 0.3 -3.14159 0 -1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001525</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001525</iyy>
+          <iyz>0</iyz>
+          <izz>0.000245</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg1_top_collision'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='leg1_top_fixed_joint_lump__leg1_ee_link_collision_1'>
+        <pose frame=''>0.06 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='leg1_top_visual'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg1_joint_2' type='revolute'>
+      <child>leg1_top</child>
+      <parent>leg1_neck</parent>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg2_neck'>
+      <pose frame=''>0.055 0.1445 0.3 -1.5708 0 1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>6.88121e-06</ixx>
+          <ixy>-7.58338e-10</ixy>
+          <ixz>-7.71885e-11</ixz>
+          <iyy>7.67769e-06</iyy>
+          <iyz>7.59082e-10</iyz>
+          <izz>6.8812e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg2_neck_collision'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='leg2_neck_visual'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg2_joint_1' type='revolute'>
+      <child>leg2_neck</child>
+      <parent>b_body</parent>
+      <axis>
+        <xyz>-1 0 -0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg2_top'>
+      <pose frame=''>0.055 0.1902 0.3 -3.14159 0 1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001525</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001525</iyy>
+          <iyz>0</iyz>
+          <izz>0.000245</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg2_top_collision'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='leg2_top_fixed_joint_lump__leg2_ee_link_collision_1'>
+        <pose frame=''>0.06 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='leg2_top_visual'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg2_joint_2' type='revolute'>
+      <child>leg2_top</child>
+      <parent>leg2_neck</parent>
+      <axis>
+        <xyz>-0 -0 -1</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg3_neck'>
+      <pose frame=''>-0.055 -0.1445 0.3 -1.5708 0 -1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>6.88121e-06</ixx>
+          <ixy>-7.58338e-10</ixy>
+          <ixz>-7.71885e-11</ixz>
+          <iyy>7.67769e-06</iyy>
+          <iyz>7.59082e-10</iyz>
+          <izz>6.8812e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg3_neck_collision'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='leg3_neck_visual'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg3_joint_1' type='revolute'>
+      <child>leg3_neck</child>
+      <parent>b_body</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg3_top'>
+      <pose frame=''>-0.055 -0.1902 0.3 -3.14159 0 -1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001525</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001525</iyy>
+          <iyz>0</iyz>
+          <izz>0.000245</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg3_top_collision'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='leg3_top_fixed_joint_lump__leg3_ee_link_collision_1'>
+        <pose frame=''>0.06 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='leg3_top_visual'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg3_joint_2' type='revolute'>
+      <child>leg3_top</child>
+      <parent>leg3_neck</parent>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg4_neck'>
+      <pose frame=''>-0.055 0.1445 0.3 -1.5708 0 1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>6.88121e-06</ixx>
+          <ixy>-7.58338e-10</ixy>
+          <ixz>-7.71885e-11</ixz>
+          <iyy>7.67769e-06</iyy>
+          <iyz>7.59082e-10</iyz>
+          <izz>6.8812e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg4_neck_collision'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='leg4_neck_visual'>
+        <pose frame=''>-0.0112 0 0 -1.57 -1.57 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/middle.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg4_joint_1' type='revolute'>
+      <child>leg4_neck</child>
+      <parent>b_body</parent>
+      <axis>
+        <xyz>-1 0 -0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>0.1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='leg4_top'>
+      <pose frame=''>-0.055 0.1902 0.3 -3.14159 0 1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001525</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001525</iyy>
+          <iyz>0</iyz>
+          <izz>0.000245</izz>
+        </inertia>
+      </inertial>
+      <collision name='leg4_top_collision'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='leg4_top_fixed_joint_lump__leg4_ee_link_collision_1'>
+        <pose frame=''>0.06 0 0 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='leg4_top_visual'>
+        <pose frame=''>0.0566 0 0 -1.57 0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://fable_model/meshes/top.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='leg4_joint_2' type='revolute'>
+      <child>leg4_top</child>
+      <parent>leg4_neck</parent>
+      <axis>
+        <xyz>-0 -0 -1</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>1.56</effort>
+          <velocity>1.56</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.15</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <plugin name='generic_controller' filename='libgeneric_controller_plugin.so'>
+      <robotNamespace>/fable_robot</robotNamespace>
+      <controller joint_name='leg1_joint_1'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+      <controller joint_name='leg2_joint_1'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+      <controller joint_name='leg3_joint_1'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+      <controller joint_name='leg4_joint_1'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+
+      <controller joint_name='leg1_joint_2'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+      <controller joint_name='leg2_joint_2'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+      <controller joint_name='leg3_joint_2'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+      <controller joint_name='leg4_joint_2'>
+        <type>position</type>
+        <pid>100.0 10.0 10.0</pid>
+      </controller>
+    </plugin>
+  </model>
+</sdf>
